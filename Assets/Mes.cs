@@ -15,11 +15,6 @@ public class Mes : MonoBehaviour
         get { return messageString; }
     }
 
-    public string getMessageString()
-    {
-        return messageString;
-    }
-
     // Start is called before的第一個偵更新
     async void Start()
     {
