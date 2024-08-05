@@ -11,7 +11,7 @@ using Windows.Networking.Sockets;
 using Windows.Storage.Streams;
 #endif
 
-public class Mes : MonoBehaviour
+public class Oriantation : MonoBehaviour
 {
     public static string messageString; // 全域變數來存儲接收到的訊息
 
@@ -36,9 +36,9 @@ public class Mes : MonoBehaviour
         try
         {
 #if UNITY_EDITOR
-            await ConnectUnityAsync("172.20.10.5", 1234);
+            await ConnectUnityAsync("172.20.10.5", 5678);
 #else
-            await ConnectUWPAsync("172.20.10.5", 1234);
+            await ConnectUWPAsync("172.20.10.5", 5678);
 #endif
         }
         catch (Exception e)
